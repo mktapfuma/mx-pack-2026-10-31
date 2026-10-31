@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Is it worth it? — the Modern Xpress value worksheet</title>
+<meta name="description" content="A fill-in worksheet that tells Modern Xpress Couriers how many consignments a month have to move through the new enquiry route for Phase 1 to pay for itself. Six inputs, your own currency, no saving invented on our side.">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Inter:wght@400;500;600&display=swap');
+:root{--ink:#202124;--body:#30343B;--muted:#5E6269;--paper:#fff;--surface:#F5F6F7;--rule:#D6D8DC;
+--amber:#B86E00;--amber-text:#8A5000;--amber-light:#FFC766;--night:#18191B;--green:#1F7A4D}
+*{box-sizing:border-box}
+body{margin:0;font-family:'Inter',-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;color:var(--ink);
+background:var(--paper);line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header.hero{background:var(--night);color:#fff;padding:56px 0 44px}
+header.hero h1{font-family:'Raleway',sans-serif;font-size:clamp(28px,4.4vw,46px);margin:0 0 12px;letter-spacing:-.01em}
+header.hero p{color:#D6D8DC;max-width:760px;margin:0 0 18px;font-size:17px}
+.brandline{font-family:'Raleway',sans-serif;letter-spacing:2.4px;text-transform:uppercase;color:var(--amber-light);
+font-size:13px;margin-bottom:18px}
+section{padding:38px 0}
+h2{font-family:'Raleway',sans-serif;font-size:clamp(21px,2.6vw,28px);margin:0 0 8px}
+.lede{color:var(--muted);max-width:780px;margin:0 0 22px}
+.panel{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:20px 22px;margin:0 0 20px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+label{display:block;font-size:14px;color:var(--body);margin:0 0 5px}
+.hint{display:block;font-size:12.5px;color:var(--muted);margin:0 0 6px}
+input[type=number],input[type=text]{width:100%;padding:10px 12px;border:1px solid #C3C7CC;border-radius:8px;
+font-family:'Inter',sans-serif;font-size:16px;background:#fff;color:var(--ink)}
+input:focus{outline:2px solid var(--amber);outline-offset:1px;border-color:var(--amber)}
+.out{background:#fff;border:1px solid var(--rule);border-left:4px solid var(--amber);border-radius:10px;padding:18px 20px;
+margin:0 0 18px}
+.out h3{font-family:'Raleway',sans-serif;margin:0 0 10px;font-size:19px}
+.kv{display:grid;grid-template-columns:minmax(200px,1fr) auto;gap:6px 16px;font-size:15.5px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0;font-weight:600;text-align:right}
+.verdict{border-radius:10px;padding:16px 18px;font-size:16px;margin:0 0 14px;border:1px solid var(--rule)}
+.verdict.good{background:#EDF7F1;border-color:#B9DFC9}
+.verdict.warn{background:#FBF3E8;border-color:#E8D2AC}
+.verdict.early{background:var(--surface)}
+.note{font-size:14px;color:var(--muted)}
+ul.tight{font-size:15.5px;color:var(--body);margin:0 0 14px;padding-left:20px}
+ul.tight li{margin-bottom:7px}
+footer{border-top:1px solid var(--rule);padding:26px 0 44px;font-size:14px;color:var(--muted)}
+a{color:var(--amber-text)}
+button{background:var(--ink);color:#fff;border:0;border-radius:8px;padding:11px 18px;font-family:'Inter',sans-serif;
+font-size:15px;font-weight:600;cursor:pointer}
+button.ghost{background:#fff;color:var(--ink);border:1px solid var(--rule)}
+button:hover{background:var(--amber);border-color:var(--amber);color:#fff}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brandline">Moses K Tapfuma · MVEOS</div>
+    <h1>Is it worth it? Fill in six numbers you already have.</h1>
+    <p><strong>We are not going to tell you what this saves.</strong> We do not know your enquiry volume, your margin or your desk cost — you do. So this worksheet does the arithmetic with <em>your</em> numbers, in <em>your</em> currency, and tells you how many consignments a month have to move through the new enquiry route for the fee to pay for itself. The number you get is one you can defend to your own boss, because you produced it.</p>
+    <p>Nothing is stored, nothing is sent, and no figure is sent to us unless you choose to send it.</p>
+  </div>
+</header>
+
+<div class="wrap">
+<section>
+  <h2>Step 1 — the fee</h2>
+  <div class="panel">
+    <div class="grid">
+      <div>
+        <label for="fee">The Phase 1 fee, in your currency</label>
+        <span class="hint">We quote in ZAR (50 000, or 56 000 with the rate-request page). If you want the quote in your currency, we re-issue it — enter here the figure you are working to. We do not convert it for you, because a converted number has a rate and a date attached to it.</span>
+        <input type="number" id="fee" value="50000" min="0" step="0.01">
+      </div>
+      <div>
+        <label for="currency">Your currency</label>
+        <span class="hint">For the labels only. Nothing is converted.</span>
+        <input type="text" id="currency" value="ZMW" maxlength="8">
+      </div>
+    </div>
+  </div>
+
+  <h2>Step 2 — six numbers</h2>
+  <p class="lede">All six come from your own desk, your own inbox and your own invoices. Leave any of them blank and the worksheet tells you what it cannot yet answer.</p>
+  <div class="panel">
+    <div class="grid">
+      <div>
+        <label for="i1">1 · Qualified enquiries a month</label>
+        <span class="hint">Your inbox or Facebook page, one month</span>
+        <input type="number" id="i1" min="0" step="1">
+      </div>
+      <div>
+        <label for="i2">2 · Share lost or delayed because the answer was not instant or complete (%)</label>
+        <span class="hint">Your desk's honest estimate</span>
+        <input type="number" id="i2" min="0" max="100" step="0.1">
+      </div>
+      <div>
+        <label for="i3">3 · Revenue per won consignment</label>
+        <span class="hint">From your invoice</span>
+        <input type="number" id="i3" min="0" step="0.01">
+      </div>
+      <div>
+        <label for="i4">4 · Share of won consignments lost to a competitor who answered faster (%)</label>
+        <span class="hint">Your commercial team's estimate</span>
+        <input type="number" id="i4" min="0" max="100" step="0.1">
+      </div>
+      <div>
+        <label for="i5">5 · Minutes it takes to give a customer a rate today</label>
+        <span class="hint">Time three enquiries</span>
+        <input type="number" id="i5" min="0" step="1">
+      </div>
+      <div>
+        <label for="i6">6 · Cost of one enquiry answered by a person</label>
+        <span class="hint">Your own desk cost per enquiry</span>
+        <input type="number" id="i6" min="0" step="0.01">
+      </div>
+    </div>
+  </div>
+
+  <h2>Step 3 — two assumptions you own</h2>
+  <p class="lede">We do not know these, so we do not assert them. They are yours to set, and the worksheet shows what each one does to the answer.</p>
+  <div class="panel">
+    <div class="grid">
+      <div>
+        <label for="a1">7 · Of the enquiries lost or delayed, the share a faster, complete answer would win back (%)</label>
+        <span class="hint">Be conservative. If you are not sure, put 0 and read the answer as the floor.</span>
+        <input type="number" id="a1" value="25" min="0" max="100" step="0.1">
+      </div>
+      <div>
+        <label for="a2">8 · Of the enquiries, the share the new route handles without a person answering each one (%)</label>
+        <span class="hint">Your expectation of what the enquiry form and triage actually absorb.</span>
+        <input type="number" id="a2" value="30" min="0" max="100" step="0.1">
+      </div>
+    </div>
+  </div>
+
+  <button id="calc">Work it out</button>
+  <button class="ghost" id="clear" style="margin-left:8px">Clear</button>
+
+  <div id="results" style="margin-top:22px"></div>
+
+  <div class="panel" style="margin-top:26px">
+    <h2 style="font-size:20px">What this worksheet deliberately does not do</h2>
+    <ul class="tight">
+      <li><strong>No invented saving.</strong> No "save 30% of admin time" figure is asserted anywhere.</li>
+      <li><strong>No AI saving.</strong> The AI programme is a separate sequence with its own price. It is not used to justify Phase 1, and Phase 1 is not used to justify the AI programme. Mixing the two is the first thing a procurement team catches.</li>
+      <li><strong>No discount, no bundle, no free pilot.</strong></li>
+      <li><strong>No compliance conclusion.</strong> What the Zambian Data Protection Act requires of your business is your lawyer's determination.</li>
+      <li><strong>No ratchet.</strong> Change any input and the answer changes with it — that is the point of doing it in your numbers.</li>
+    </ul>
+  </div>
+</section>
+</div>
+
+<footer><div class="wrap">
+Prepared by Moses K Tapfuma / MVEOS for Modern Xpress Couriers · 31 October 2026. The arithmetic above is a model you complete, not a saving we assert. If the number you get is larger than your monthly volume, this is not worth doing yet — and we would rather tell you that now than take your money.
+</div></footer>
+
+<script>
+function num(id){ var v = document.getElementById(id).value; if(v === '') return null; var n = parseFloat(v); return isNaN(n)?null:n; }
+function money(n, cur){ if(n === null || !isFinite(n)) return '—'; return n.toLocaleString(undefined,{maximumFractionDigits:2}) + ' ' + cur; }
+
+function work(){
+  var fee=num('fee'), cur=(document.getElementById('currency').value||'').trim()||'your currency';
+  var i1=num('i1'), i2=num('i2'), i3=num('i3'), i4=num('i4'), i5=num('i5'), i6=num('i6');
+  var a1=num('a1'), a2=num('a2');
+  var out=document.getElementById('results');
+  var missing=[];
+  if(i1===null) missing.push('enquiries a month');
+  if(i2===null) missing.push('share lost or delayed');
+  if(i3===null) missing.push('revenue per won consignment');
+  if(i4===null) missing.push('share lost to a faster competitor');
+  if(i5===null) missing.push('minutes to give a rate');
+  if(i6===null) missing.push('cost of one enquiry answered by a person');
+  if(missing.length){
+    out.innerHTML='<div class="verdict early"><strong>Not enough to answer yet.</strong> Still needed: '+missing.join(', ')+'. '
+      +'Everything is optional — fill what you know and read the parts that are answerable.</div>';
+    return;
+  }
+  var lostEnquiries = i1*(i2/100);
+  var recovered = lostEnquiries*(a1/100);
+  var monthlyRevenue = recovered*i3;
+  var costPerMinute = i5>0 ? i6/i5 : 0;
+  var timeSavedMinutes = i1*(a2/100)*i5;
+  var monthlyTimeValue = timeSavedMinutes*costPerMinute;
+  var monthlyBenefit = monthlyRevenue + monthlyTimeValue;
+  var requiredPerMonth = fee>0 ? fee/monthlyBenefit : null;
+  var consignmentThroughputNeeded = i3>0 ? fee/i3 : null;
+  var volumeIsBigger = (consignmentThroughputNeeded!==null) && (i1>0) && (consignmentThroughputNeeded>i1);
+
+  var verdict, vclass;
+  if(monthlyBenefit<=0){
+    verdict='<strong>On these numbers the fee is not recovered.</strong> Either the share you can win back is too small, or the fee is larger than the value your desk is losing. That is a useful answer to have before you spend anything — and if the cause is the fee, we would rather say so than keep working on the document.';
+    vclass='warn';
+  } else if(volumeIsBigger){
+    verdict='<strong>This is the honest answer, and it is a "not yet".</strong> The fee needs about <strong>'+consignmentThroughputNeeded.toLocaleString(undefined,{maximumFractionDigits:1})
+      +' consignments a month</strong> to move through the new enquiry route, and your monthly volume is about '+i1.toLocaleString()
+      +'. If that number is larger than your monthly volume, this is not worth doing yet — and I would rather tell you that now than take your money. '
+      +'Either the price changes, the volume grows, or the value per consignment is higher than the figure you entered.';
+    vclass='warn';
+  } else {
+    verdict='<strong>On these numbers the fee is recoverable.</strong> It needs about <strong>'+consignmentThroughputNeeded.toLocaleString(undefined,{maximumFractionDigits:1})
+      +' consignments a month</strong> to move through the new enquiry route — below your monthly volume of about '+i1.toLocaleString()
+      +'. This is a model you completed, so it is a number you can defend internally. It is not a promise: the inputs are your estimates, and we will measure the two that matter (time to first response, and the share of enquiries lost before a conversation starts) against a dated baseline in week one.';
+    vclass='good';
+  }
+
+  out.innerHTML =
+    '<div class="verdict '+vclass+'">'+verdict+'</div>'+
+    '<div class="out"><h3>What the worksheet computed</h3><dl class="kv">'+
+    '<dt>Fee</dt><dd>'+money(fee,cur)+'</dd>'+
+    '<dt>Enquiries a month</dt><dd>'+i1.toLocaleString()+'</dd>'+
+    '<dt>Lost or delayed a month</dt><dd>'+lostEnquiries.toLocaleString(undefined,{maximumFractionDigits:1})+'</dd>'+
+    '<dt>Recovered if the answer gets faster and complete</dt><dd>'+recovered.toLocaleString(undefined,{maximumFractionDigits:1})+'</dd>'+
+    '<dt>Value of that, a month</dt><dd>'+money(monthlyRevenue,cur)+'</dd>'+
+    '<dt>Time released a month</dt><dd>'+timeSavedMinutes.toLocaleString(undefined,{maximumFractionDigits:0})+' minutes</dd>'+
+    '<dt>Value of that time, a month</dt><dd>'+money(monthlyTimeValue,cur)+'</dd>'+
+    '<dt>Total monthly benefit</dt><dd>'+money(monthlyBenefit,cur)+'</dd>'+
+    '<dt>Months to pay the fee back</dt><dd>'+(monthlyBenefit>0?(fee/monthlyBenefit).toLocaleString(undefined,{maximumFractionDigits:1}):'—')+'</dd>'+
+    '<dt>Consignments a month that must move through the new route</dt><dd>'+(consignmentThroughputNeeded===null?'—':consignmentThroughputNeeded.toLocaleString(undefined,{maximumFractionDigits:1}))+'</dd>'+
+    '<dt>Your monthly enquiry volume</dt><dd>'+i1.toLocaleString()+'</dd>'+
+    '</dl></div>'+
+    '<p class="note">Read this as a model, not a measurement. Every input above is an estimate you made, and the two we will measure for real once Phase 1 starts are <strong>time to first response</strong> and <strong>the share of enquiries lost before a conversation starts</strong> — both against a dated baseline in week one, so the movement is visible rather than argued.</p>';
+}
+
+document.getElementById('calc').addEventListener('click', work);
+document.getElementById('clear').addEventListener('click', function(){
+  ['i1','i2','i3','i4','i5','i6'].forEach(function(id){ document.getElementById(id).value=''; });
+  document.getElementById('results').innerHTML='';
+});
+</script>
+</body>
+</html>

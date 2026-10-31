@@ -1,0 +1,143 @@
+{
+  "pack": "Modern Xpress Couriers - client proposal pack",
+  "prepared_for": "Modern Xpress Couriers, Lusaka, Zambia",
+  "prepared_by": "Moses K Tapfuma / MVEOS (CMO lane, Chiedza Marufu)",
+  "pack_date": "2026-10-31",
+  "generated_at": "2026-10-31T13:38:38Z",
+  "source_of_record": "OUTBOX/MODERNX_CLIENT_WALKTHROUGH_DECK_2026_10_31.md (deck), OUTBOX/MODERNX_CLIENT_PACK_2026_10_31/*.html (documents)",
+  "notes": [
+    "The deck markdown is the source of record; the HTML slides and PNGs are renderings of it.",
+    "The quotation is PREPARED FOR ISSUE. It takes effect when signed by Moses K Tapfuma; until then it is a proposal price.",
+    "No compliance conclusion is published anywhere in this pack.",
+    "Every measured figure about the client's site is dated 2026-10-24 and re-runnable."
+  ],
+  "files": [
+    {
+      "path": "MODERNX_CLIENT_WALKTHROUGH_DECK.pdf",
+      "bytes": 420241,
+      "sha256": "80b71533d500701cbe2ce01264f1660d37e5d0265c977513e6fc3c972317524f"
+    },
+    {
+      "path": "deck-print.html",
+      "bytes": 26961,
+      "sha256": "ab2c6845b2c0fac9eb1d9140aad404214ce3a2d011abc508d4a7f1700b3018a8"
+    },
+    {
+      "path": "deck-print.pdf",
+      "bytes": 398684,
+      "sha256": "f7abcfc90ee9f62674bdef782ba61c8631ec3cba3f783d08217b758e89ebd00e"
+    },
+    {
+      "path": "deck.html",
+      "bytes": 5931,
+      "sha256": "3d94aa8b583f1aa73f460eae3037ccd01c8af43ec7fa411ebf1168c840c33c05"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11160,
+      "sha256": "8785b844de87628f751fcf4aa21e6aab0da0b4b4b09f8e51107b2defe94dd1a8"
+    },
+    {
+      "path": "proposal.html",
+      "bytes": 16536,
+      "sha256": "5a271c88aa1a1071c37e35a64b0084b3c4f534b8621f0b474600530d22f5645a"
+    },
+    {
+      "path": "proposal.pdf",
+      "bytes": 396455,
+      "sha256": "d65c27c66acf766673fbd1f3a56d987ee4158bd84b621e3d2a7b0a87abed878f"
+    },
+    {
+      "path": "quotation.html",
+      "bytes": 13762,
+      "sha256": "fb1e2d8e19f9c292c73a79dd0441ede05e5ba51f5c9f25e9555e33b6bd914126"
+    },
+    {
+      "path": "quotation.pdf",
+      "bytes": 376073,
+      "sha256": "1dba75feefd0bba906400b63ecd71caa6e03962e66c5b04eae29daa2248354f0"
+    },
+    {
+      "path": "value-worksheet.html",
+      "bytes": 14626,
+      "sha256": "8992d1892cd517e4dc64b5ff4be7666e5a83f488b73538ce7f43882bcd5b54db"
+    },
+    {
+      "path": "value-worksheet.pdf",
+      "bytes": 261918,
+      "sha256": "66be6f9b3625dfef14aca1cd13433d99a95f6325e237d10a5d212ba4cf615c33"
+    },
+    {
+      "path": "slides/slide-01.png",
+      "bytes": 70277,
+      "sha256": "edadeee83fef80d08bfdc6c2570bcb2284dc2b4dabaf55cd09d02c63fe339193"
+    },
+    {
+      "path": "slides/slide-02.png",
+      "bytes": 73533,
+      "sha256": "4bc2dc0a6720c96f5ebab0150f96e16d1cdacf9f0e8e6856d369437cba3d01bf"
+    },
+    {
+      "path": "slides/slide-03.png",
+      "bytes": 169023,
+      "sha256": "5fc73db38da038c20d0f32b4a58634979403c9d09974d2306e2bcd2d84b232eb"
+    },
+    {
+      "path": "slides/slide-04.png",
+      "bytes": 131469,
+      "sha256": "b368e1866240ac79b493cead7e822a00487e57d20e346ca71ec98c058ee0e6f4"
+    },
+    {
+      "path": "slides/slide-05.png",
+      "bytes": 114141,
+      "sha256": "fdf9ccdc27b9944f73fd8a8d435493ed63cdfd0b254453b44284e985ee13aaf0"
+    },
+    {
+      "path": "slides/slide-06.png",
+      "bytes": 136833,
+      "sha256": "55ab768e7e6af581b4189cbd97c9f091f747204f452d7efcab3d28f24728b839"
+    },
+    {
+      "path": "slides/slide-07.png",
+      "bytes": 172367,
+      "sha256": "3d6f8baabe8566a3204dfe9a177d021f6e3619bab45e8a42a2aa6608f9ef696e"
+    },
+    {
+      "path": "slides/slide-08.png",
+      "bytes": 183177,
+      "sha256": "182ac8a665e36c9b1568c1dca4d06a8f8a6177f4eae3cbd221ea87e21cab7b16"
+    },
+    {
+      "path": "slides/slide-09.png",
+      "bytes": 141994,
+      "sha256": "6168ad0aca01dd5449996326ff02641ef0b019c0ce5a7ff771f411b8aa4f92ff"
+    },
+    {
+      "path": "slides/slide-10.png",
+      "bytes": 208338,
+      "sha256": "abd74bfcace9719b78f797372251d18fd07ab6a672f50a97dad43b040ea42d96"
+    },
+    {
+      "path": "slides/slide-11.png",
+      "bytes": 150909,
+      "sha256": "9111c952d3e9ae92a84c002a48ba8a89227083d2f911bf8651dd1f0600787198"
+    },
+    {
+      "path": "slides/slide-12.png",
+      "bytes": 116063,
+      "sha256": "375127f97e8d78449f33820d9edf4d523f86c16c5c3e65635d0211643603e94c"
+    },
+    {
+      "path": "slides/slide-13.png",
+      "bytes": 83356,
+      "sha256": "eb06344c7b6e2b5ea30d2bf1dd1beeda14dddc6f617edd5af35b444aa953ff7a"
+    },
+    {
+      "path": "slides/slide-14.png",
+      "bytes": 111939,
+      "sha256": "1bb01cacfcf389847ff399cce287081d65c36d1ff1a0b9bde8f400d2345f1d15"
+    }
+  ],
+  "file_count": 25,
+  "total_bytes": 3805766
+}
